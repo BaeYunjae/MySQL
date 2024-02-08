@@ -25,8 +25,7 @@ SELECT ProductName, ProductID FROM Products WHERE ProductID % 2 = 0 AND Supplier
 -- 7. Customers에 Address를 “주소”, city를 “도시”, PostalCode를 “우편번호” 로 출력, 우편번호 내림차순으로 정렬
 SELECT Address AS "주소", city AS "도시", PostalCode AS "우편번호" 
 FROM Customers 
-ORDER BY 
-PostalCode DESC;
+ORDER BY PostalCode DESC;
 
 
 -- 8. OrderDetails에 OrderDetailID를 기준으로 내림차순으로 정렬하고, 5개만 출력하기 (모든 컬럼)
